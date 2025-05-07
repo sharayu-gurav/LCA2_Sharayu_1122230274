@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Aangan - Sign Up</title>
+    <link rel="stylesheet" href="styles 2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+</head>
+<script src="/Frontend Final Project/JS/login.js" defer></script>
+<body>
+
+    <div class="background-container">
+        <div class="overlay"></div>
+        
+        <div class="container">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Antique Aangan Logo" class="logo">
+                <h1 class="title">Antique Aangan</h1>
+                <p class="subtitle">Discover exquisite Indian treasures for your home</p>
+            </div>
+
+            <div class="form-container">
+                <div class="tab-container">
+                    <button class="tab active">Sign Up</button>
+                    <a href="login screen 2.html">
+                    <button class="tab">Log In</button></a>
+                </div>
+
+                <input type="email" class="input-field" placeholder="Email">
+                <input type="password" class="input-field" placeholder="Create Password">
+                <input type="text" class="input-field" placeholder="Confirm Password">
+
+                <button class="button-signup">Sign Up</button>
+
+                <p class="or-text">Or With</p>
+
+                <div class="social-buttons">
+                    <button class="social-button google"> 
+                        <img src="google icon.png" alt="Google" width="16px"> Login with Google
+                    </button>
+                    <button class="social-button facebook"> 
+                        <img src="facebook icon.png" alt="Facebook" width="18px"> Login with Facebook
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $('.button-signup').click(function () {
+      // Remove any existing message first
+      $('.signup-success').remove();
+      
+      // Create the message element
+      const message = $('<div class="signup-success" style="margin-bottom: 10px; color: green;">Signed up successfully</div>');
+      
+      // Insert message before the button
+      $(this).before(message);
+    });
+  </script>
+
+</html>

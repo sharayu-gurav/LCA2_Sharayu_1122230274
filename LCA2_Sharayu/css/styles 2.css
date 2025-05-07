@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'AntiqueAangan';
+    src: url('your-font-file.woff2') format('woff2');
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    max-width: 375px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.title {
+    font-family: 'AntiqueAangan', serif;
+    font-size: 26px;
+    color: #e5c29f;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #e5c29f;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.tab {
+    background: none;
+    border: 1px solid #e5c29f;
+    border-radius: 15px;
+    padding: 12px 30px;
+    margin-left: 16px;
+    font-size: 16px;
+    font-family: 'AntiqueAangan', serif;
+    font-weight: 600;
+    color: #e5c29f;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #e5c29f;
+    color: black;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.or-text {
+    color: #e5c29f;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    column-gap: 10px;
+}
+
+.google {
+    background: white;
+    color: black;
+}
+
+.facebook {
+    background: #f4f4f4;
+    color: black;
+}
+
+.button-signup {
+    background-color: #e5c29f;
+    color: black;
+    padding: 12px 40px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'AntiqueAangan', serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button-signup:hover{
+    background-color: #c59e78;
+}
